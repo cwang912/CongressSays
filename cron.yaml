@@ -1,0 +1,5 @@
+cron:
+- description: daily tweet
+  url: /congresssays
+  schedule: every tuesday,wednesday,thursday,friday,saturday 15:43
+  timezone: America/New_York
