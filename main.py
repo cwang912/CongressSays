@@ -25,7 +25,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
     	day = date.today() - timedelta(1)
     	endpoint = 'http://capitolwords.org/api/phrases.json' 
-    	query_params = {'apikey': 'eea337bef84a4129ba8639825c1b39ac', 'entity_type': 'date', 'entity_value': day, 'n': 1}
+    	query_params = {'apikey': '---', 'entity_type': 'date', 'entity_value': day, 'n': 1}
     	formatted_args = urllib.urlencode(query_params)
     	page = urllib2.urlopen(url = endpoint + "?" + formatted_args)
     	words = json.loads(page.read())
